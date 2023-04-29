@@ -28,7 +28,7 @@
 
 /* Version string: */
 
-#define VERSION             "2.57b"
+#define VERSION             "2.56b"
 
 /******************************************************
  *                                                    *
@@ -99,6 +99,10 @@
 /* Absolute minimum number of havoc cycles (after all adjustments): */
 
 #define HAVOC_MIN           16
+
+/* Power Schedule Divisor */
+#define POWER_BETA          1
+#define MAX_FACTOR          (POWER_BETA * 32)
 
 /* Maximum stacking for havoc-stage tweaks. The actual value is calculated
    like this: 
